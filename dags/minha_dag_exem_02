@@ -12,7 +12,7 @@ from datetime import datetime
         catchup=False #backfill
 
 )
-def pipeline():
+def minha_terceira_dag():
 
     @task
     def primeira_atividade():
@@ -41,4 +41,4 @@ def pipeline():
     t1.set_downstream([t2, t3]) #t2, t3 dependem de t1
     t3.set_upstream(t4) #t4 depende de t3
 
-pipeline()
+minha_terceira_dag()

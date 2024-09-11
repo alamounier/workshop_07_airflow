@@ -13,7 +13,7 @@ from datetime import datetime
         catchup=False #backfill
 
 )
-def pipeline():
+def minha_quarta_dag():
 
     @task
     def primeira_atividade():
@@ -40,4 +40,4 @@ def pipeline():
 
     chain(t1,t2,t3,t4)
 
-pipeline()
+minha_quarta_dag()
