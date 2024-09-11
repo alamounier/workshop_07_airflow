@@ -39,3 +39,5 @@ def pipeline():
     t4 = quarta_atividade()
 
     t1 >> t2 >> t3 >> t4
+
+pipeline()
