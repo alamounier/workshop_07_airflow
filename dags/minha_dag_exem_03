@@ -17,12 +17,11 @@ def pipeline():
 
     @task
     def primeira_atividade():
-        print("minha primeira atividade!")
-        sleep(2)
+        return "teste!"
 
     @task
-    def segunda_atvidade():
-        print("minha segunda atividade!")
+    def segunda_atvidade(response):
+        print(response)
         sleep(2)
 
     @task
@@ -35,7 +34,7 @@ def pipeline():
         print("pipeline finalizou")
 
     t1 = primeira_atividade()
-    t2 = segunda_atvidade()
+    t2 = segunda_atvidade(t1)
     t3 = terceira_atividade()
     t4 = quarta_atividade()
 
