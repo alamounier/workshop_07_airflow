@@ -6,7 +6,7 @@ from airflow.models.baseoperator import chain
 from datetime import datetime
 
 @dag (
-        dag_id= "minha_primeira_dag",
+        dag_id= "minha_quarta_dag",
         description="minha elt braba",
         schedule="* * * * *",
         start_date=datetime(2024,9,11),
