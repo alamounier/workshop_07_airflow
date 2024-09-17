@@ -1,6 +1,6 @@
 from airflow.decorators import dag
 from pendulum import datetime
-from src.custom_operators.postgres_to_duckdb_operator import PostgresToDuckDBOperator
+from include.custom_operators.postgres_to_duckdb_operator import PostgresToDuckDBOperator
 
 CONNECTION_DUCKDB = "my_motherduck_conn"  # minha connection ID da MotherDuck connection
 CONNECTION_POSTGRESDB = "my_postgresdb_conn" # minha connection ID do PostgreSQL connection
